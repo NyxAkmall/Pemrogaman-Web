@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Pemesanan Pizza </title>
+</head>
+<body>
+    <form action="form_hasil_pemesanan_pizza.html">
+    <h1> Black Goose Bistro | Pizza-on-Demand </h1>
+    <p> Our 12"wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within and hour</p>
+    <hr>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th> Your Information </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label style="background-color:lightslategray" for="Name">Name</label></td>
+                    <td>: <input style="background-color: aqua" type="text" id="Name"></td>
+                </tr>
+                <tr>
+                    <td><label style="background-color:lightslategray" for="Addres">Addres</label></td>
+                    <td>: <input style="background-color: aqua" type="text" id="Addres"></td>
+                </tr>
+                <tr>
+                    <td><label style="background-color:lightslategray" for="No.HP">No.Handphone</label></td>
+                    <td>: <input style="background-color: aqua" type="number" id="No.HP"></td>
+                </tr>
+                <tr>
+                    <td><label style="background-color:lightslategray" for="Email">Email</label></td>
+                    <td>: <input style="background-color: aqua" type="email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label style="background-color:lightslategray" for="Description">Delivery Instruction</label></td>
+                    <td>: <textarea style="background-color: aqua" id="Description"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset style="background-color:chartreuse">
+            <legend><b> Design Your Pizza </b></legend>
+            <h4>Crust (Choose One):</h4>
+            <ul style="list-style-type:none">
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="radio" id="Classic White" name="crust">
+                    <label style="background-color:aqua" for="Classic White"> Classic White</label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="radio" id="Multigrain" name="crust">
+                    <label style="background-color:aqua" for="Multigrain"> Multigrain</label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="radio" id="Una Melt" name="crust">
+                    <label style="background-color:aqua" for="Una Melt"> Una Melt</label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="radio" id="Cheese Galore" name="crust">
+                    <label style="background-color:aqua" style="background-color:aqua" for="Cheese Galore"> Cheese Galore</label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="radio" id="Meat Lovers" name="crust">
+                    <label style="background-color:aqua" for="Meat Lovers"> Meat Lovers</label>
+                </li>
+            </ul>
+            <h4>Toppings (Choose as many as you want):</h4>
+            <ul style="list-style-type:none">
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="White Sauce">
+                    <label style="background-color:aqua" for="White Sauce"> White Sauce </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Mozarella Cheese">
+                    <label style="background-color:aqua" for="Mozarella Cheese"> Mozarella Cheese </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Pepprerani">
+                    <label style="background-color:aqua" for="Pepprerani"> Pepprerani </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Mushrooms">
+                    <label style="background-color:aqua" for="Mushrooms"> Mushrooms </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Peppers">
+                    <label style="background-color:aqua" for="Peppers"> Peppers </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Anchories">
+                    <label style="background-color:aqua" for="Anchories"> Anchories </label>
+                </li>
+                <li style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <input type="checkbox" id="Pineapple">
+                    <label style="background-color:aqua" for="Pineapple"> Pineapple </label>
+                </li>
+            </ul>
+        </fieldset>
+        <h4> Number </h4>
+        <label style="background-color:lightslategray" for="count"> How Many Pizza </label>
+        <input style="background-color:aqua" type="number" id="count">
+        <br>
+        <br>
+        <button style="background-color:lightslategray" type="submit">Submit</button>
+        <button style="background-color:lightslategray" type="reset">Reset</button>
+    </form>
+</body>
+</html>
