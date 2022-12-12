@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kurs_rp.html">Nomor 2</a></li>
+                <li><a href="chatbox.html">Nomor 3</a></li>
+                <li><a href="img-picker.html">Nomor 4</a></li>
+                <li><a href="form.html">Nomor 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <select id="pilihan" onchange="cetakGambar()">
+        <option value="">--PILIH HEWAN--</option>
+        <option value="Bison">--Bison--</option>
+        <option value="Gajah">--Gajah--</option>
+        <option value="Gorila">--Gorila--</option>
+        <option value="Macan">--Macan--</option>
+        <option value="Singa">--Singa--</option>
+    </select>
+    <br>
+    <img id="gambar">
+
+    <script>
+        function cetakGambar(){
+            let pil = document.getElementById("pilihan").value;
+            let image = document.getElementById("gambar");
+            
+            if(pil == "Bison"){
+                alert("Ini Adalah Foto Bison");
+                image.setAttribute("src", "img/bison.jpg");
+            }else if(pil == "Gajah"){
+                alert("Ini Adalah Foto Gajah");
+                image.setAttribute("src", "img/gajah.jpg");
+            }else if(pil == "Gorila"){
+                alert("Ini Adalah Foto Gorila");
+                image.setAttribute("src", "img/gorila.jpg");
+            }else if(pil == "Macan"){
+                alert("Ini Adalah Foto Macan");
+                image.setAttribute("src", "img/macan.jpg");
+            }else if(pil == "Singa"){
+                alert("Ini Adalah Foto Singa");
+                image.setAttribute("src", "img/singa.jpg");
+            }else(
+                alert("Foto Tidak Terdaftar")
+            )
+        }
+    </script>
+</body>
+</html>
